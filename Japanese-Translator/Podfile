@@ -1,0 +1,17 @@
+platform :ios, '13.0'
+
+target 'Japanese-Translator' do
+  use_frameworks!
+
+pod 'GoogleMLKit/TextRecognition'
+
+  target 'Japanese-TranslatorTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Japanese-TranslatorUITests' do
+    # Pods for testing
+  end
+
+end

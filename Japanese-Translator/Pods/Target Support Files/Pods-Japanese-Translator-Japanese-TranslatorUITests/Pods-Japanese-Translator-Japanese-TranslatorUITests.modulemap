@@ -1,0 +1,6 @@
+framework module Pods_Japanese_Translator_Japanese_TranslatorUITests {
+  umbrella header "Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
