@@ -7,73 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		063CBD2B02CA30BEFB7E227CEF455D65 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1234470560568B164D8B6F9A132725D1 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1373F6FCCD379A47AE2F8ED28C92B498 /* Pods-Japanese-TranslatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C40CAC1E7B2A7E26FCCABB30F0AB4F /* Pods-Japanese-TranslatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A1F9BD72C6DA3700E354C43974B1083 /* Pods-Japanese-Translator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02138DEF795CD7A7AF75F9FEE127C8AC /* Pods-Japanese-Translator-dummy.m */; };
-		2F087D40C638D49068E38F04A82CECE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		37DF8A90ABA0EFD0119A1B8FE514FA36 /* Pods-Japanese-TranslatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FA28BDD8CF823955C506F71E07CFD0 /* Pods-Japanese-TranslatorTests-dummy.m */; };
-		513B1223CFFEE5F3AA066AA889669DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6FF6792CC2EE1F41554291CBB57336F7 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5047CF3C7F6F55A15B7863558351C1E5 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m */; };
-		D518BDB9C516297F2FCF344501185DA0 /* Pods-Japanese-Translator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B8A1B251DC3ADDED5075D81C50B88D /* Pods-Japanese-Translator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCB7F1C19E6C8F41C6933075AF3CC02E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		09ED0DD5450BD4741C1EBEDCAB7A3FFB /* TesseractVariableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EF8E04664034EDBFD7198602ABE2D /* TesseractVariableName.swift */; };
+		0B5F1BFD5195F84164EF5A2850604676 /* LanguageModelDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044DDB4F8D4037183CFF13BB67D85B0 /* LanguageModelDataSource.swift */; };
+		1373F6FCCD379A47AE2F8ED28C92B498 /* Pods-Japanese-TranslatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3414C76770CBEAB9DC64BE8D4C1407 /* Pods-Japanese-TranslatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AC573A70B420C83C362AAA1F508A4F7 /* SwiftyTesseract-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9C7B4B17577E89C1144CB1CDE39755 /* SwiftyTesseract-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C31EB027656B857B88AD6F00B4295D /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC7A648FD92F0274320052ADAA11E8A /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		274902ED43D78A315559A0D3F8B85331 /* SwiftyTesseractError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03242EB931E75230A39E56FC288E823E /* SwiftyTesseractError.swift */; };
+		2D4C25DB8A285F60F91CB54FC5B59D79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		2F76EAB0FAE1A194442D3EA51C106E45 /* LanguageStringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D01FDCEE791CEC1A4EB760768033C /* LanguageStringConverter.swift */; };
+		37DF8A90ABA0EFD0119A1B8FE514FA36 /* Pods-Japanese-TranslatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42695D2EE12362194D80C98ACB7BB80E /* Pods-Japanese-TranslatorTests-dummy.m */; };
+		396D0A40DE7227360B84218238E7DF3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		428D837142772170B0505293B3052BD4 /* RecognitionLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6ED20EDA70DFB73216D4B0D2BA974 /* RecognitionLanguage.swift */; };
+		43B27068947F01DF06AF0F66EBA4FD5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		4A40DEEBD4CC7C3121E1C790F64E8185 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C214BCFDCE33884DBA7211548DF4A4 /* BoundingBox.swift */; };
+		4C655E1BCBEEFF3EEA661AE0363DBAAC /* EngineMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37048F7835C27CD694A12F734E5DDA5F /* EngineMode.swift */; };
+		55ED9B4514E4C9FDC918D8C68B802BF5 /* SwiftyTesseract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633FBCDA882EB9BFDC202E55F5AC5442 /* SwiftyTesseract.swift */; };
+		708C7EC43E1BDDA2E96FD6B6398D7AAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		728F3243D92CB72A6E228731053A147E /* Bundle+pathToTrainedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7493D5CA6D2DAEBDB0591F83D46AEF3 /* Bundle+pathToTrainedData.swift */; };
+		84DAF2A31AB93148C4354F17DD00452D /* Pods-Japanese-Translator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A613C17B555B35C1014B753B38D0EB /* Pods-Japanese-Translator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9980E566DB2DA089AA496AD6337C7620 /* Pods-Japanese-Translator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FD9770B497806601D70DE16114BE4 /* Pods-Japanese-Translator-dummy.m */; };
+		B950072E134BCC58E9CC2BEA8D02E3FD /* ResultIteratorLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1347AEA2B2274FA34DB5C9513455615 /* ResultIteratorLevel.swift */; };
+		BFC4F99228493C0FB32F07F4942C13D7 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AE1F275098ED261DE4F6B5EEAD90B /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m */; };
+		C7F42479C156E3961368B393D5138879 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281E5ECC88297E0792272F5C3DBB64D /* String+Extensions.swift */; };
+		DCB7F1C19E6C8F41C6933075AF3CC02E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		E341D598158DCDBD5DFA64AB983F2828 /* RecognizedBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F86C257493D602E5396D4C92872C1 /* RecognizedBlock.swift */; };
+		F606A180417B9D8068FC5C6BC188946B /* SwiftyTesseract-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD52FFE9DF48971A3285DD9C1F78D10 /* SwiftyTesseract-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		171FF13C9D23D9748C23E7FF94F0D479 /* PBXContainerItemProxy */ = {
+		5AAED943D065261325319E6254ECC98B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3794A8DFD138BF331415B6098497F1F1;
 			remoteInfo = "Pods-Japanese-Translator";
 		};
+		7E281F979F9D85B72A8DD1E8370F93D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FDA8701204211983085669C4E12E6FE;
+			remoteInfo = SwiftyTesseract;
+		};
+		FBC8E58327121CD1FDA422ADED1B50EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FDA8701204211983085669C4E12E6FE;
+			remoteInfo = SwiftyTesseract;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02138DEF795CD7A7AF75F9FEE127C8AC /* Pods-Japanese-Translator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese-Translator-dummy.m"; sourceTree = "<group>"; };
-		06428ED7CFAB224F5B2697EC245B593D /* Pods-Japanese-TranslatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-TranslatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		0761750621D89814F7E0E8DD1A8506FA /* Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1234470560568B164D8B6F9A132725D1 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h"; sourceTree = "<group>"; };
-		19FA28BDD8CF823955C506F71E07CFD0 /* Pods-Japanese-TranslatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese-TranslatorTests-dummy.m"; sourceTree = "<group>"; };
+		03242EB931E75230A39E56FC288E823E /* SwiftyTesseractError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyTesseractError.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/SwiftyTesseractError.swift; sourceTree = "<group>"; };
+		19CA8CA10287F29845360AF0DB0FD564 /* SwiftyTesseract.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyTesseract.release.xcconfig; sourceTree = "<group>"; };
+		1DC0EC77F9D4B8E228B42EE8B730FB14 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		219C7307965C9DE989192E049F9BBE8B /* Pods-Japanese-TranslatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese-TranslatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		28FAE721276176104ACA8F3B15C1CAE1 /* Pods_Japanese_TranslatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Japanese_TranslatorTests.framework; path = "Pods-Japanese-TranslatorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		39B8A1B251DC3ADDED5075D81C50B88D /* Pods-Japanese-Translator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese-Translator-umbrella.h"; sourceTree = "<group>"; };
+		2B3FD9770B497806601D70DE16114BE4 /* Pods-Japanese-Translator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese-Translator-dummy.m"; sourceTree = "<group>"; };
+		31C6711477E0A4F8402A96FB7AAD831A /* SwiftyTesseract.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyTesseract.debug.xcconfig; sourceTree = "<group>"; };
+		34F00FC361E0FEEF681C30A5D7E5D967 /* SwiftyTesseract.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyTesseract.modulemap; sourceTree = "<group>"; };
+		37048F7835C27CD694A12F734E5DDA5F /* EngineMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EngineMode.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/EngineMode.swift; sourceTree = "<group>"; };
+		37E4E248FFD0CDAF15813181F1B658D3 /* SwiftyTesseract-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyTesseract-Info.plist"; sourceTree = "<group>"; };
+		38C8C23C46E1DFFF81A20D74D76154C3 /* SwiftyTesseract-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SwiftyTesseract-xcframeworks.sh"; sourceTree = "<group>"; };
+		3C9AE1F275098ED261DE4F6B5EEAD90B /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m"; sourceTree = "<group>"; };
+		417E1A5182FFB951B0A3A691C47A4BF5 /* Pods-Japanese-TranslatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-TranslatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4187E0C054F2E7F01153EDCCF746771C /* Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		42695D2EE12362194D80C98ACB7BB80E /* Pods-Japanese-TranslatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese-TranslatorTests-dummy.m"; sourceTree = "<group>"; };
+		437EF8E04664034EDBFD7198602ABE2D /* TesseractVariableName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TesseractVariableName.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/TesseractVariableName.swift; sourceTree = "<group>"; };
 		49964A5CD06B53A91B2466B7DAD76DF7 /* Pods_Japanese_Translator_Japanese_TranslatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Japanese_Translator_Japanese_TranslatorUITests.framework; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C193266F70C70F8F05165A3755CF454 /* Pods-Japanese-Translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-Translator.debug.xcconfig"; sourceTree = "<group>"; };
-		5047CF3C7F6F55A15B7863558351C1E5 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m"; sourceTree = "<group>"; };
-		5EC6C73DC6758F7031F8CB3A9C5A0E58 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6269EF1F59078380947F516912BEA78B /* Pods-Japanese-Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-Translator.release.xcconfig"; sourceTree = "<group>"; };
-		649E6C65D8F37CE015422DCF209F489B /* Pods-Japanese-TranslatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-TranslatorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6689E1F477A5B765923D6375102E83CE /* Pods-Japanese-Translator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Japanese-Translator.modulemap"; sourceTree = "<group>"; };
-		6C5781DADD34B65B14FF7044B8A3D643 /* Pods-Japanese-Translator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-Translator-Info.plist"; sourceTree = "<group>"; };
-		6D60B753FBA4060B98249580189F8966 /* Pods-Japanese-TranslatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese-TranslatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7F84B122AA06B4BF22C8E5F8515E9A13 /* Pods-Japanese-TranslatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-TranslatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		920295CB86086EB3279DADD3AAE6738D /* Pods-Japanese-Translator-Japanese-TranslatorUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-Info.plist"; sourceTree = "<group>"; };
-		9B0916752CAE514D346A4C18F02AD229 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5044DDB4F8D4037183CFF13BB67D85B0 /* LanguageModelDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageModelDataSource.swift; path = SwiftyTesseract/SwiftyTesseract/Protocols/LanguageModelDataSource.swift; sourceTree = "<group>"; };
+		5BC7A648FD92F0274320052ADAA11E8A /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h"; sourceTree = "<group>"; };
+		5D43423E2A677AC26C49BFBDA58582E7 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5D9C7B4B17577E89C1144CB1CDE39755 /* SwiftyTesseract-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyTesseract-umbrella.h"; sourceTree = "<group>"; };
+		633FBCDA882EB9BFDC202E55F5AC5442 /* SwiftyTesseract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyTesseract.swift; path = SwiftyTesseract/SwiftyTesseract/SwiftyTesseract.swift; sourceTree = "<group>"; };
+		6AD3C121659B528C32586B75F42AA506 /* Pods-Japanese-Translator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Japanese-Translator.modulemap"; sourceTree = "<group>"; };
+		7AA4ED3B9F9A76CCDE5C1C6CCA51AC52 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7FD52FFE9DF48971A3285DD9C1F78D10 /* SwiftyTesseract-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyTesseract-dummy.m"; sourceTree = "<group>"; };
+		8649EF195CE477B4C3A647E0D4C27B53 /* Pods-Japanese-Translator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-Translator-Info.plist"; sourceTree = "<group>"; };
+		9202338804A7B9DEC7D5EC445EE0CCF9 /* Pods-Japanese-Translator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese-Translator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		964D01FDCEE791CEC1A4EB760768033C /* LanguageStringConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageStringConverter.swift; path = SwiftyTesseract/SwiftyTesseract/Protocols/LanguageStringConverter.swift; sourceTree = "<group>"; };
+		9C5869A39A6EBD615F57D7411BFA7A56 /* SwiftyTesseract-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyTesseract-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A09982A966FD0348689F46A93CB973F2 /* Pods-Japanese-Translator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese-Translator-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A4EE69F21390DB536A756E98F8C989AC /* Pods-Japanese-Translator-Japanese-TranslatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AA62A8FE4C3FC0EA9ACC862FE155775D /* Pods-Japanese-Translator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-Translator-acknowledgements.plist"; sourceTree = "<group>"; };
-		AC1125FA88AF4664BDCA5A3C558929B3 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests.modulemap"; sourceTree = "<group>"; };
-		B9C40CAC1E7B2A7E26FCCABB30F0AB4F /* Pods-Japanese-TranslatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese-TranslatorTests-umbrella.h"; sourceTree = "<group>"; };
-		C83D8A9993ECC899BD14C6F7C393049D /* Pods-Japanese-TranslatorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-TranslatorTests-Info.plist"; sourceTree = "<group>"; };
+		A281E5ECC88297E0792272F5C3DBB64D /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "SwiftyTesseract/SwiftyTesseract/Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
+		AFAFE2D0237BC0A8DB392C5AC0774C56 /* Pods-Japanese-TranslatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-TranslatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B355D6470EC089E3E8641C7E1E53725B /* Pods-Japanese-Translator-Japanese-TranslatorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests.modulemap"; sourceTree = "<group>"; };
+		B9930AED39614C2A9AB687F251DDEFB6 /* Pods-Japanese-Translator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Japanese-Translator-frameworks.sh"; sourceTree = "<group>"; };
+		BBF19F38E1EEBD251B6B18EE5069AEE7 /* Pods-Japanese-TranslatorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-TranslatorTests-Info.plist"; sourceTree = "<group>"; };
+		C1347AEA2B2274FA34DB5C9513455615 /* ResultIteratorLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultIteratorLevel.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/ResultIteratorLevel.swift; sourceTree = "<group>"; };
+		C49F7BF82541801E045605EACDC95543 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4C214BCFDCE33884DBA7211548DF4A4 /* BoundingBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoundingBox.swift; path = SwiftyTesseract/SwiftyTesseract/Structs/BoundingBox.swift; sourceTree = "<group>"; };
+		CC7F86C257493D602E5396D4C92872C1 /* RecognizedBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognizedBlock.swift; path = SwiftyTesseract/SwiftyTesseract/Structs/RecognizedBlock.swift; sourceTree = "<group>"; };
+		CCB6ED20EDA70DFB73216D4B0D2BA974 /* RecognitionLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionLanguage.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/RecognitionLanguage.swift; sourceTree = "<group>"; };
+		D0F79668606E2BAF26C3BEEE73C14234 /* libtesseract.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = libtesseract.xcframework; path = SwiftyTesseract/libtesseract.xcframework; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D67198C7879A1D04DB3D172EBBD06346 /* Pods-Japanese-Translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-Translator.debug.xcconfig"; sourceTree = "<group>"; };
+		D6919E63532A35ED4E39B5137B3ADE8D /* Pods-Japanese-Translator-Japanese-TranslatorUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-Translator-Japanese-TranslatorUITests-Info.plist"; sourceTree = "<group>"; };
+		D7493D5CA6D2DAEBDB0591F83D46AEF3 /* Bundle+pathToTrainedData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+pathToTrainedData.swift"; path = "SwiftyTesseract/SwiftyTesseract/Extensions/Bundle+pathToTrainedData.swift"; sourceTree = "<group>"; };
+		DF5422C25451D6206BAC2D99993F9201 /* Pods-Japanese-TranslatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-TranslatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		E64D231B4142F96D75F74C7A355F7CE1 /* Pods_Japanese_Translator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Japanese_Translator.framework; path = "Pods-Japanese-Translator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEFAA1B899437974F91C14EA67B17440 /* Pods-Japanese-TranslatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Japanese-TranslatorTests.modulemap"; sourceTree = "<group>"; };
+		EA3414C76770CBEAB9DC64BE8D4C1407 /* Pods-Japanese-TranslatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese-TranslatorTests-umbrella.h"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F14E75BF4C53F8EF00C3DABA78386E62 /* Pods-Japanese-Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese-Translator.release.xcconfig"; sourceTree = "<group>"; };
+		F6E3B8BC238866073523ED9347EED4C6 /* SwiftyTesseract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyTesseract.framework; path = SwiftyTesseract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95B8F3E8DEF465043D736CCC1B30014 /* Pods-Japanese-TranslatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Japanese-TranslatorTests.modulemap"; sourceTree = "<group>"; };
+		F9A613C17B555B35C1014B753B38D0EB /* Pods-Japanese-Translator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese-Translator-umbrella.h"; sourceTree = "<group>"; };
+		FBC23A8D0EBF3B7EBF1E65FCCFCE7C08 /* Pods-Japanese-Translator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese-Translator-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		75B2198B0F98E8F12789FCCF7A5344F1 /* Frameworks */ = {
+		5B264A4281A2AEBD1C428ED3F157CEF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513B1223CFFEE5F3AA066AA889669DFF /* Foundation.framework in Frameworks */,
+				396D0A40DE7227360B84218238E7DF3B /* Foundation.framework in Frameworks */,
+				708C7EC43E1BDDA2E96FD6B6398D7AAB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD6386C014407D3ED052877149315560 /* Frameworks */ = {
+		6EE5027CD367331917317A0E55C22DD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F087D40C638D49068E38F04A82CECE3 /* Foundation.framework in Frameworks */,
+				2D4C25DB8A285F60F91CB54FC5B59D79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE750154ECC9881BE396515729FDA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B27068947F01DF06AF0F66EBA4FD5C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,111 +152,162 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C267B8C6FED313A25AD2A12FE1E9907 /* Pods-Japanese-Translator */ = {
+		10438A84A8255883A239F983CF3656EA /* Pods-Japanese-TranslatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				6689E1F477A5B765923D6375102E83CE /* Pods-Japanese-Translator.modulemap */,
-				A09982A966FD0348689F46A93CB973F2 /* Pods-Japanese-Translator-acknowledgements.markdown */,
-				AA62A8FE4C3FC0EA9ACC862FE155775D /* Pods-Japanese-Translator-acknowledgements.plist */,
-				02138DEF795CD7A7AF75F9FEE127C8AC /* Pods-Japanese-Translator-dummy.m */,
-				6C5781DADD34B65B14FF7044B8A3D643 /* Pods-Japanese-Translator-Info.plist */,
-				39B8A1B251DC3ADDED5075D81C50B88D /* Pods-Japanese-Translator-umbrella.h */,
-				4C193266F70C70F8F05165A3755CF454 /* Pods-Japanese-Translator.debug.xcconfig */,
-				6269EF1F59078380947F516912BEA78B /* Pods-Japanese-Translator.release.xcconfig */,
-			);
-			name = "Pods-Japanese-Translator";
-			path = "Target Support Files/Pods-Japanese-Translator";
-			sourceTree = "<group>";
-		};
-		3CB004F6FB3D872B7A2E4AADC43E0380 /* Pods-Japanese-Translator-Japanese-TranslatorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AC1125FA88AF4664BDCA5A3C558929B3 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.modulemap */,
-				0761750621D89814F7E0E8DD1A8506FA /* Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.markdown */,
-				5EC6C73DC6758F7031F8CB3A9C5A0E58 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.plist */,
-				5047CF3C7F6F55A15B7863558351C1E5 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m */,
-				920295CB86086EB3279DADD3AAE6738D /* Pods-Japanese-Translator-Japanese-TranslatorUITests-Info.plist */,
-				1234470560568B164D8B6F9A132725D1 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h */,
-				A4EE69F21390DB536A756E98F8C989AC /* Pods-Japanese-Translator-Japanese-TranslatorUITests.debug.xcconfig */,
-				9B0916752CAE514D346A4C18F02AD229 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig */,
-			);
-			name = "Pods-Japanese-Translator-Japanese-TranslatorUITests";
-			path = "Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests";
-			sourceTree = "<group>";
-		};
-		54424E8BC750692EDCC38406B434B3B5 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1C267B8C6FED313A25AD2A12FE1E9907 /* Pods-Japanese-Translator */,
-				3CB004F6FB3D872B7A2E4AADC43E0380 /* Pods-Japanese-Translator-Japanese-TranslatorUITests */,
-				82E4255675EF854A422745EC1E60B0FF /* Pods-Japanese-TranslatorTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		82E4255675EF854A422745EC1E60B0FF /* Pods-Japanese-TranslatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				FEFAA1B899437974F91C14EA67B17440 /* Pods-Japanese-TranslatorTests.modulemap */,
-				6D60B753FBA4060B98249580189F8966 /* Pods-Japanese-TranslatorTests-acknowledgements.markdown */,
-				7F84B122AA06B4BF22C8E5F8515E9A13 /* Pods-Japanese-TranslatorTests-acknowledgements.plist */,
-				19FA28BDD8CF823955C506F71E07CFD0 /* Pods-Japanese-TranslatorTests-dummy.m */,
-				C83D8A9993ECC899BD14C6F7C393049D /* Pods-Japanese-TranslatorTests-Info.plist */,
-				B9C40CAC1E7B2A7E26FCCABB30F0AB4F /* Pods-Japanese-TranslatorTests-umbrella.h */,
-				649E6C65D8F37CE015422DCF209F489B /* Pods-Japanese-TranslatorTests.debug.xcconfig */,
-				06428ED7CFAB224F5B2697EC245B593D /* Pods-Japanese-TranslatorTests.release.xcconfig */,
+				F95B8F3E8DEF465043D736CCC1B30014 /* Pods-Japanese-TranslatorTests.modulemap */,
+				219C7307965C9DE989192E049F9BBE8B /* Pods-Japanese-TranslatorTests-acknowledgements.markdown */,
+				417E1A5182FFB951B0A3A691C47A4BF5 /* Pods-Japanese-TranslatorTests-acknowledgements.plist */,
+				42695D2EE12362194D80C98ACB7BB80E /* Pods-Japanese-TranslatorTests-dummy.m */,
+				BBF19F38E1EEBD251B6B18EE5069AEE7 /* Pods-Japanese-TranslatorTests-Info.plist */,
+				EA3414C76770CBEAB9DC64BE8D4C1407 /* Pods-Japanese-TranslatorTests-umbrella.h */,
+				AFAFE2D0237BC0A8DB392C5AC0774C56 /* Pods-Japanese-TranslatorTests.debug.xcconfig */,
+				DF5422C25451D6206BAC2D99993F9201 /* Pods-Japanese-TranslatorTests.release.xcconfig */,
 			);
 			name = "Pods-Japanese-TranslatorTests";
 			path = "Target Support Files/Pods-Japanese-TranslatorTests";
 			sourceTree = "<group>";
 		};
-		8A0E42D2E14CE4516D6C5C39F716DD30 /* Products */ = {
+		14D775425ACFD9FBE8686BB6EE1A242E /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				E64D231B4142F96D75F74C7A355F7CE1 /* Pods_Japanese_Translator.framework */,
 				49964A5CD06B53A91B2466B7DAD76DF7 /* Pods_Japanese_Translator_Japanese_TranslatorUITests.framework */,
 				28FAE721276176104ACA8F3B15C1CAE1 /* Pods_Japanese_TranslatorTests.framework */,
+				F6E3B8BC238866073523ED9347EED4C6 /* SwiftyTesseract.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19265EE2D0A37BF1AECCF7FC8EFB4349 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F41E42972F454F4BCE292DFAA6D073CB /* Pods-Japanese-Translator */,
+				1D1EAC3FA9EC0CE6382407B2678C1FA0 /* Pods-Japanese-Translator-Japanese-TranslatorUITests */,
+				10438A84A8255883A239F983CF3656EA /* Pods-Japanese-TranslatorTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1D1EAC3FA9EC0CE6382407B2678C1FA0 /* Pods-Japanese-Translator-Japanese-TranslatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B355D6470EC089E3E8641C7E1E53725B /* Pods-Japanese-Translator-Japanese-TranslatorUITests.modulemap */,
+				1DC0EC77F9D4B8E228B42EE8B730FB14 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.markdown */,
+				4187E0C054F2E7F01153EDCCF746771C /* Pods-Japanese-Translator-Japanese-TranslatorUITests-acknowledgements.plist */,
+				3C9AE1F275098ED261DE4F6B5EEAD90B /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m */,
+				5D43423E2A677AC26C49BFBDA58582E7 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-frameworks.sh */,
+				D6919E63532A35ED4E39B5137B3ADE8D /* Pods-Japanese-Translator-Japanese-TranslatorUITests-Info.plist */,
+				5BC7A648FD92F0274320052ADAA11E8A /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h */,
+				C49F7BF82541801E045605EACDC95543 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.debug.xcconfig */,
+				7AA4ED3B9F9A76CCDE5C1C6CCA51AC52 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig */,
+			);
+			name = "Pods-Japanese-Translator-Japanese-TranslatorUITests";
+			path = "Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests";
+			sourceTree = "<group>";
+		};
+		431737363D2D8B2359ACFEA13DDDDE0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F79668606E2BAF26C3BEEE73C14234 /* libtesseract.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D0F591B47BEEF865E48A17C1B616C0B /* SwiftyTesseract */ = {
+			isa = PBXGroup;
+			children = (
+				C4C214BCFDCE33884DBA7211548DF4A4 /* BoundingBox.swift */,
+				D7493D5CA6D2DAEBDB0591F83D46AEF3 /* Bundle+pathToTrainedData.swift */,
+				37048F7835C27CD694A12F734E5DDA5F /* EngineMode.swift */,
+				5044DDB4F8D4037183CFF13BB67D85B0 /* LanguageModelDataSource.swift */,
+				964D01FDCEE791CEC1A4EB760768033C /* LanguageStringConverter.swift */,
+				CCB6ED20EDA70DFB73216D4B0D2BA974 /* RecognitionLanguage.swift */,
+				CC7F86C257493D602E5396D4C92872C1 /* RecognizedBlock.swift */,
+				C1347AEA2B2274FA34DB5C9513455615 /* ResultIteratorLevel.swift */,
+				A281E5ECC88297E0792272F5C3DBB64D /* String+Extensions.swift */,
+				633FBCDA882EB9BFDC202E55F5AC5442 /* SwiftyTesseract.swift */,
+				03242EB931E75230A39E56FC288E823E /* SwiftyTesseractError.swift */,
+				437EF8E04664034EDBFD7198602ABE2D /* TesseractVariableName.swift */,
+				431737363D2D8B2359ACFEA13DDDDE0C /* Frameworks */,
+				F29AE184B31C9DF05F703B7FB2EC0900 /* Support Files */,
+			);
+			name = SwiftyTesseract;
+			path = SwiftyTesseract;
+			sourceTree = "<group>";
+		};
+		CED3F40B02A862DED8D184C4F4CFA512 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D0F591B47BEEF865E48A17C1B616C0B /* SwiftyTesseract */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				8A0E42D2E14CE4516D6C5C39F716DD30 /* Products */,
-				54424E8BC750692EDCC38406B434B3B5 /* Targets Support Files */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				CED3F40B02A862DED8D184C4F4CFA512 /* Pods */,
+				14D775425ACFD9FBE8686BB6EE1A242E /* Products */,
+				19265EE2D0A37BF1AECCF7FC8EFB4349 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		F29AE184B31C9DF05F703B7FB2EC0900 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				34F00FC361E0FEEF681C30A5D7E5D967 /* SwiftyTesseract.modulemap */,
+				7FD52FFE9DF48971A3285DD9C1F78D10 /* SwiftyTesseract-dummy.m */,
+				37E4E248FFD0CDAF15813181F1B658D3 /* SwiftyTesseract-Info.plist */,
+				9C5869A39A6EBD615F57D7411BFA7A56 /* SwiftyTesseract-prefix.pch */,
+				5D9C7B4B17577E89C1144CB1CDE39755 /* SwiftyTesseract-umbrella.h */,
+				38C8C23C46E1DFFF81A20D74D76154C3 /* SwiftyTesseract-xcframeworks.sh */,
+				31C6711477E0A4F8402A96FB7AAD831A /* SwiftyTesseract.debug.xcconfig */,
+				19CA8CA10287F29845360AF0DB0FD564 /* SwiftyTesseract.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyTesseract";
+			sourceTree = "<group>";
+		};
+		F41E42972F454F4BCE292DFAA6D073CB /* Pods-Japanese-Translator */ = {
+			isa = PBXGroup;
+			children = (
+				6AD3C121659B528C32586B75F42AA506 /* Pods-Japanese-Translator.modulemap */,
+				9202338804A7B9DEC7D5EC445EE0CCF9 /* Pods-Japanese-Translator-acknowledgements.markdown */,
+				FBC23A8D0EBF3B7EBF1E65FCCFCE7C08 /* Pods-Japanese-Translator-acknowledgements.plist */,
+				2B3FD9770B497806601D70DE16114BE4 /* Pods-Japanese-Translator-dummy.m */,
+				B9930AED39614C2A9AB687F251DDEFB6 /* Pods-Japanese-Translator-frameworks.sh */,
+				8649EF195CE477B4C3A647E0D4C27B53 /* Pods-Japanese-Translator-Info.plist */,
+				F9A613C17B555B35C1014B753B38D0EB /* Pods-Japanese-Translator-umbrella.h */,
+				D67198C7879A1D04DB3D172EBBD06346 /* Pods-Japanese-Translator.debug.xcconfig */,
+				F14E75BF4C53F8EF00C3DABA78386E62 /* Pods-Japanese-Translator.release.xcconfig */,
+			);
+			name = "Pods-Japanese-Translator";
+			path = "Target Support Files/Pods-Japanese-Translator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		20B599949F47ECD782CA3AAB2A255360 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				063CBD2B02CA30BEFB7E227CEF455D65 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ABE555920B2CF8CF7A78F2CF1D498D56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,11 +316,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B01C177C79A565213EF60F6CB8A7F013 /* Headers */ = {
+		C01E321888AEE095C64CB4664A2CE8DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D518BDB9C516297F2FCF344501185DA0 /* Pods-Japanese-Translator-umbrella.h in Headers */,
+				20C31EB027656B857B88AD6F00B4295D /* Pods-Japanese-Translator-Japanese-TranslatorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71CD2C2ACFB2626ED39881B3DBD8286 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC573A70B420C83C362AAA1F508A4F7 /* SwiftyTesseract-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A5C7C07AF6CA6BAA963DB3E8A1C1FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DAF2A31AB93148C4354F17DD00452D /* Pods-Japanese-Translator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,20 +345,40 @@
 /* Begin PBXNativeTarget section */
 		3794A8DFD138BF331415B6098497F1F1 /* Pods-Japanese-Translator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F7DF4387C4BC107F00802ACE11C0B1B /* Build configuration list for PBXNativeTarget "Pods-Japanese-Translator" */;
+			buildConfigurationList = C6159C7E574C0FCD10F52E138C7E91EA /* Build configuration list for PBXNativeTarget "Pods-Japanese-Translator" */;
 			buildPhases = (
-				B01C177C79A565213EF60F6CB8A7F013 /* Headers */,
-				C3479D8372C674D920CF7DD8797072B2 /* Sources */,
-				75B2198B0F98E8F12789FCCF7A5344F1 /* Frameworks */,
-				F300788B85009C7B8BFCB24579700579 /* Resources */,
+				D7A5C7C07AF6CA6BAA963DB3E8A1C1FF /* Headers */,
+				CD8EEB4033CD90D35F1748B1ECA67605 /* Sources */,
+				6EE5027CD367331917317A0E55C22DD2 /* Frameworks */,
+				7E8E8139C60850584523C31B4FA8869A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8AD6FABD9A27D5B02FE3C8DE3C70D9C /* PBXTargetDependency */,
+			);
+			name = "Pods-Japanese-Translator";
+			productName = "Pods-Japanese-Translator";
+			productReference = E64D231B4142F96D75F74C7A355F7CE1 /* Pods_Japanese_Translator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5FDA8701204211983085669C4E12E6FE /* SwiftyTesseract */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D1FDA514BF304A5B44041EEA1A9E1B /* Build configuration list for PBXNativeTarget "SwiftyTesseract" */;
+			buildPhases = (
+				C71CD2C2ACFB2626ED39881B3DBD8286 /* Headers */,
+				3CDDAF771FD3B51C91998AEBE781A3E8 /* [CP] Copy XCFrameworks */,
+				5B050FE04DEC8C95C71382240D56276F /* Sources */,
+				5B264A4281A2AEBD1C428ED3F157CEF3 /* Frameworks */,
+				2F5CCB8781219863747037C19DB36E64 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Japanese-Translator";
-			productName = "Pods-Japanese-Translator";
-			productReference = E64D231B4142F96D75F74C7A355F7CE1 /* Pods_Japanese_Translator.framework */;
+			name = SwiftyTesseract;
+			productName = SwiftyTesseract;
+			productReference = F6E3B8BC238866073523ED9347EED4C6 /* SwiftyTesseract.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D109CDF411D823B0A76C4E56B1DFD997 /* Pods-Japanese-TranslatorTests */ = {
@@ -242,7 +393,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				86C4D21BE0C23A91D53ACB62504146BB /* PBXTargetDependency */,
+				928F143D3E9E1D11BBA40C7BD7195066 /* PBXTargetDependency */,
 			);
 			name = "Pods-Japanese-TranslatorTests";
 			productName = "Pods-Japanese-TranslatorTests";
@@ -251,16 +402,17 @@
 		};
 		D3212A7BEED283D2CE16BDEC191D49F5 /* Pods-Japanese-Translator-Japanese-TranslatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C89C15C9995615635E933F3EB1EDD59B /* Build configuration list for PBXNativeTarget "Pods-Japanese-Translator-Japanese-TranslatorUITests" */;
+			buildConfigurationList = B832E31F1D6AF7C8EB4900679F9DC3F1 /* Build configuration list for PBXNativeTarget "Pods-Japanese-Translator-Japanese-TranslatorUITests" */;
 			buildPhases = (
-				20B599949F47ECD782CA3AAB2A255360 /* Headers */,
-				8066288BFF77C5417A26CCE98B8422F2 /* Sources */,
-				CD6386C014407D3ED052877149315560 /* Frameworks */,
-				3C9FE786B3246ABB2775EB80347FF54C /* Resources */,
+				C01E321888AEE095C64CB4664A2CE8DA /* Headers */,
+				CD8F5FAEC80900919525006A93E2ECFC /* Sources */,
+				9FE750154ECC9881BE396515729FDA8C /* Frameworks */,
+				607DE3CF289A85702430C81241BB758E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				209A46B519979AD36CA41CDFD3280446 /* PBXTargetDependency */,
 			);
 			name = "Pods-Japanese-Translator-Japanese-TranslatorUITests";
 			productName = "Pods-Japanese-Translator-Japanese-TranslatorUITests";
@@ -285,19 +437,34 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8A0E42D2E14CE4516D6C5C39F716DD30 /* Products */;
+			productRefGroup = 14D775425ACFD9FBE8686BB6EE1A242E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3794A8DFD138BF331415B6098497F1F1 /* Pods-Japanese-Translator */,
 				D3212A7BEED283D2CE16BDEC191D49F5 /* Pods-Japanese-Translator-Japanese-TranslatorUITests */,
 				D109CDF411D823B0A76C4E56B1DFD997 /* Pods-Japanese-TranslatorTests */,
+				5FDA8701204211983085669C4E12E6FE /* SwiftyTesseract */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3C9FE786B3246ABB2775EB80347FF54C /* Resources */ = {
+		2F5CCB8781219863747037C19DB36E64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607DE3CF289A85702430C81241BB758E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8E8139C60850584523C31B4FA8869A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,14 +478,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F300788B85009C7B8BFCB24579700579 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CDDAF771FD3B51C91998AEBE781A3E8 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/SwiftyTesseract/SwiftyTesseract-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/SwiftyTesseract/SwiftyTesseract-xcframeworks-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/SwiftyTesseract/SwiftyTesseract-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		375C9EFC465B1EF7371F2EFA614D6739 /* Sources */ = {
@@ -329,37 +509,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8066288BFF77C5417A26CCE98B8422F2 /* Sources */ = {
+		5B050FE04DEC8C95C71382240D56276F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF6792CC2EE1F41554291CBB57336F7 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m in Sources */,
+				4A40DEEBD4CC7C3121E1C790F64E8185 /* BoundingBox.swift in Sources */,
+				728F3243D92CB72A6E228731053A147E /* Bundle+pathToTrainedData.swift in Sources */,
+				4C655E1BCBEEFF3EEA661AE0363DBAAC /* EngineMode.swift in Sources */,
+				0B5F1BFD5195F84164EF5A2850604676 /* LanguageModelDataSource.swift in Sources */,
+				2F76EAB0FAE1A194442D3EA51C106E45 /* LanguageStringConverter.swift in Sources */,
+				428D837142772170B0505293B3052BD4 /* RecognitionLanguage.swift in Sources */,
+				E341D598158DCDBD5DFA64AB983F2828 /* RecognizedBlock.swift in Sources */,
+				B950072E134BCC58E9CC2BEA8D02E3FD /* ResultIteratorLevel.swift in Sources */,
+				C7F42479C156E3961368B393D5138879 /* String+Extensions.swift in Sources */,
+				F606A180417B9D8068FC5C6BC188946B /* SwiftyTesseract-dummy.m in Sources */,
+				55ED9B4514E4C9FDC918D8C68B802BF5 /* SwiftyTesseract.swift in Sources */,
+				274902ED43D78A315559A0D3F8B85331 /* SwiftyTesseractError.swift in Sources */,
+				09ED0DD5450BD4741C1EBEDCAB7A3FFB /* TesseractVariableName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3479D8372C674D920CF7DD8797072B2 /* Sources */ = {
+		CD8EEB4033CD90D35F1748B1ECA67605 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1F9BD72C6DA3700E354C43974B1083 /* Pods-Japanese-Translator-dummy.m in Sources */,
+				9980E566DB2DA089AA496AD6337C7620 /* Pods-Japanese-Translator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8F5FAEC80900919525006A93E2ECFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC4F99228493C0FB32F07F4942C13D7 /* Pods-Japanese-Translator-Japanese-TranslatorUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		86C4D21BE0C23A91D53ACB62504146BB /* PBXTargetDependency */ = {
+		209A46B519979AD36CA41CDFD3280446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyTesseract;
+			target = 5FDA8701204211983085669C4E12E6FE /* SwiftyTesseract */;
+			targetProxy = FBC8E58327121CD1FDA422ADED1B50EB /* PBXContainerItemProxy */;
+		};
+		928F143D3E9E1D11BBA40C7BD7195066 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Japanese-Translator";
 			target = 3794A8DFD138BF331415B6098497F1F1 /* Pods-Japanese-Translator */;
-			targetProxy = 171FF13C9D23D9748C23E7FF94F0D479 /* PBXContainerItemProxy */;
+			targetProxy = 5AAED943D065261325319E6254ECC98B /* PBXContainerItemProxy */;
+		};
+		B8AD6FABD9A27D5B02FE3C8DE3C70D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyTesseract;
+			target = 5FDA8701204211983085669C4E12E6FE /* SwiftyTesseract */;
+			targetProxy = 7E281F979F9D85B72A8DD1E8370F93D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		63D20EECE8B6CF08C869A04912482D1A /* Debug */ = {
+		03AEE7634568CC0129D44A2802B47C99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C193266F70C70F8F05165A3755CF454 /* Pods-Japanese-Translator.debug.xcconfig */;
+			baseConfigurationReference = 7AA4ED3B9F9A76CCDE5C1C6CCA51AC52 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -371,7 +583,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,7 +592,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -389,14 +601,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		72CC798603FECBF44A32D64B1E9146A4 /* Debug */ = {
+		1E2C4C8B1DBCEB0965582D93BCD2A52D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4EE69F21390DB536A756E98F8C989AC /* Pods-Japanese-Translator-Japanese-TranslatorUITests.debug.xcconfig */;
+			baseConfigurationReference = C49F7BF82541801E045605EACDC95543 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -497,44 +710,6 @@
 			};
 			name = Debug;
 		};
-		93B7B1144F4A045DE1A9960EBE81293F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B0916752CAE514D346A4C18F02AD229 /* Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -597,9 +772,46 @@
 			};
 			name = Release;
 		};
+		A96EAF6DE479B8862B5E52AA15982131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67198C7879A1D04DB3D172EBBD06346 /* Pods-Japanese-Translator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B0642FA846FF402ACF9DF1FDF3959253 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06428ED7CFAB224F5B2697EC245B593D /* Pods-Japanese-TranslatorTests.release.xcconfig */;
+			baseConfigurationReference = DF5422C25451D6206BAC2D99993F9201 /* Pods-Japanese-TranslatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -635,11 +847,10 @@
 			};
 			name = Release;
 		};
-		CAEC14249D9DC63F458A4E5FB793D1A1 /* Debug */ = {
+		B2CA2532DF0DD2ECF71FE8AFA5CE8038 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 649E6C65D8F37CE015422DCF209F489B /* Pods-Japanese-TranslatorTests.debug.xcconfig */;
+			baseConfigurationReference = 19CA8CA10287F29845360AF0DB0FD564 /* SwiftyTesseract.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -649,32 +860,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Japanese-TranslatorTests/Pods-Japanese-TranslatorTests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyTesseract/SwiftyTesseract-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyTesseract/SwiftyTesseract-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Japanese-TranslatorTests/Pods-Japanese-TranslatorTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SwiftyTesseract/SwiftyTesseract.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyTesseract;
+				PRODUCT_NAME = SwiftyTesseract;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		EAE57F07DF104F7A1D0890ADA457F688 /* Release */ = {
+		C655EBA69AE57197C926DC724600419E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6269EF1F59078380947F516912BEA78B /* Pods-Japanese-Translator.release.xcconfig */;
+			baseConfigurationReference = F14E75BF4C53F8EF00C3DABA78386E62 /* Pods-Japanese-Translator.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -710,6 +921,78 @@
 			};
 			name = Release;
 		};
+		CAEC14249D9DC63F458A4E5FB793D1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFAFE2D0237BC0A8DB392C5AC0774C56 /* Pods-Japanese-TranslatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese-TranslatorTests/Pods-Japanese-TranslatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese-TranslatorTests/Pods-Japanese-TranslatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E04145C7568A0F94E9CA8B6118D2FC4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C6711477E0A4F8402A96FB7AAD831A /* SwiftyTesseract.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyTesseract/SwiftyTesseract-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyTesseract/SwiftyTesseract-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyTesseract/SwiftyTesseract.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyTesseract;
+				PRODUCT_NAME = SwiftyTesseract;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -722,20 +1005,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F7DF4387C4BC107F00802ACE11C0B1B /* Build configuration list for PBXNativeTarget "Pods-Japanese-Translator" */ = {
+		B832E31F1D6AF7C8EB4900679F9DC3F1 /* Build configuration list for PBXNativeTarget "Pods-Japanese-Translator-Japanese-TranslatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63D20EECE8B6CF08C869A04912482D1A /* Debug */,
-				EAE57F07DF104F7A1D0890ADA457F688 /* Release */,
+				1E2C4C8B1DBCEB0965582D93BCD2A52D /* Debug */,
+				03AEE7634568CC0129D44A2802B47C99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C89C15C9995615635E933F3EB1EDD59B /* Build configuration list for PBXNativeTarget "Pods-Japanese-Translator-Japanese-TranslatorUITests" */ = {
+		C6159C7E574C0FCD10F52E138C7E91EA /* Build configuration list for PBXNativeTarget "Pods-Japanese-Translator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72CC798603FECBF44A32D64B1E9146A4 /* Debug */,
-				93B7B1144F4A045DE1A9960EBE81293F /* Release */,
+				A96EAF6DE479B8862B5E52AA15982131 /* Debug */,
+				C655EBA69AE57197C926DC724600419E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D1FDA514BF304A5B44041EEA1A9E1B /* Build configuration list for PBXNativeTarget "SwiftyTesseract" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04145C7568A0F94E9CA8B6118D2FC4F /* Debug */,
+				B2CA2532DF0DD2ECF71FE8AFA5CE8038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

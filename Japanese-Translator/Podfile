@@ -3,6 +3,7 @@ platform :ios, '13.0'
 target 'Japanese-Translator' do
   use_frameworks!
 
+  pod 'SwiftyTesseract'
 
   target 'Japanese-TranslatorTests' do
     inherit! :search_paths

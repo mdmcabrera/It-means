@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 import Vision
+import SwiftyTesseract
 
 class CameraViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
@@ -119,11 +120,12 @@ class CameraViewController: UIViewController {
                 }
 
                 self.hightlightWord(box: boxRegion)
-            //    self.performOCR()
+                self.startTesseractTextRecognition()
             }
         }
     }
 
+    // This has to go
     private func performOCR() {
         guard let image = detectedTextImage?.cgImage else {
             return
@@ -154,6 +156,19 @@ class CameraViewController: UIViewController {
         try? requestHandler.perform([request])
 
 
+    }
+
+    private func startTesseractTextRecognition() {
+        let swiftyTesseract = SwiftyTesseract(language: RecognitionLanguage.japanese)
+
+        if let image = detectedTextImage {
+            let scaledImage = image.scaledImage(1000) ?? image
+
+            swiftyTesseract.performOCR(on: scaledImage) { recognizedString in
+                guard let text = recognizedString else { return }
+                print(text)
+            }
+        }
     }
 
     /**
