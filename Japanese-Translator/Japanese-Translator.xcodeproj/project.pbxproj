@@ -193,8 +193,6 @@
 				3E5D3EBF25EAA0DD00FA7D81 /* Sources */,
 				3E5D3EC025EAA0DD00FA7D81 /* Frameworks */,
 				3E5D3EC125EAA0DD00FA7D81 /* Resources */,
-				58BF98F2DE589C0202106544 /* [CP] Embed Pods Frameworks */,
-				9CC81BBC09CCC7887DBA9962 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,8 +230,6 @@
 				3E5D3EE025EAA0DF00FA7D81 /* Sources */,
 				3E5D3EE125EAA0DF00FA7D81 /* Frameworks */,
 				3E5D3EE225EAA0DF00FA7D81 /* Resources */,
-				B0400DABC628B933A579A832 /* [CP] Embed Pods Frameworks */,
-				7A8376403BD26CB31ECCBB9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,40 +333,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		58BF98F2DE589C0202106544 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A8376403BD26CB31ECCBB9B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7BDDCE693AA0D76E25BA0ECB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,40 +353,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9CC81BBC09CCC7887DBA9962 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator/Pods-Japanese-Translator-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0400DABC628B933A579A832 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C11F01558D9E2229EC2E8D38 /* [CP] Check Pods Manifest.lock */ = {

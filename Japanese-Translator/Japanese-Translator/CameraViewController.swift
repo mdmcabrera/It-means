@@ -8,7 +8,6 @@
 import UIKit
 import AVFoundation
 import Vision
-import MLKit
 
 class CameraViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
@@ -41,49 +40,7 @@ class CameraViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         startLiveVideo()
         startTextDetection() // Vision Framework recognition
-        startMLTextDetection()
 
-    }
-
-    private func startMLTextDetection() {
-        guard let detectedImage = detectedTextImage else { return }
-        let image = VisionImage(image: detectedImage)
-        image.orientation = .up
-
-        let textRecognizer = TextRecognizer.textRecognizer()
-
-        textRecognizer.process(image) { result, error in
-            guard error == nil, let result = result else {
-                print(error)
-                return
-            }
-
-            // Process result
-            print(result.text)
-
-            /*
-            let resultText = result.text
-            for block in result.blocks {
-                let blockText = block.text
-                let blockLanguages = block.recognizedLanguages
-                let blockCornerPoints = block.cornerPoints
-                let blockFrame = block.frame
-                for line in block.lines {
-                    let lineText = line.text
-                    let lineLanguages = line.recognizedLanguages
-                    let lineCornerPoints = line.cornerPoints
-                    let lineFrame = line.frame
-                    for element in line.elements {
-                        let elementText = element.text
-               //         let elementLanguages = element.recognizedLanguages
-                        let elementCornerPoints = element.cornerPoints
-                        let elementFrame = element.frame
-                    }
-                }
-            }
-            */
-
-        }
     }
 
     override func viewDidLayoutSubviews() {
@@ -163,7 +120,6 @@ class CameraViewController: UIViewController {
 
                 self.hightlightWord(box: boxRegion)
             //    self.performOCR()
-                self.startMLTextDetection()
             }
         }
     }
