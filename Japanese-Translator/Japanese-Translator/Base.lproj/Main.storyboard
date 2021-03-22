@@ -20,26 +20,61 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H63-M5-rTr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL1-W3-kR3">
+                                <rect key="frame" x="167" y="632" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ABj-2H-dRO"/>
+                                    <constraint firstAttribute="width" constant="80" id="qkb-jp-Jfc"/>
+                                </constraints>
+                                <color key="tintColor" red="0.9879697086" green="0.98444689419999998" blue="0.99222344709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="button-camera">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTakePhoto:" destination="HzN-Eh-AnP" eventType="touchUpInside" id="hs9-Vr-IJs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yWz-Mg-QWM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="H63-M5-rTr" firstAttribute="trailing" secondItem="yWz-Mg-QWM" secondAttribute="trailing" id="9SV-Pn-LY3"/>
+                            <constraint firstItem="yWz-Mg-QWM" firstAttribute="bottom" secondItem="XL1-W3-kR3" secondAttribute="bottom" constant="24" id="NIa-Ed-Xzh"/>
                             <constraint firstItem="H63-M5-rTr" firstAttribute="top" secondItem="yWz-Mg-QWM" secondAttribute="top" id="ZKg-n7-22r"/>
                             <constraint firstItem="H63-M5-rTr" firstAttribute="leading" secondItem="yWz-Mg-QWM" secondAttribute="leading" id="eWf-hN-v2j"/>
+                            <constraint firstItem="XL1-W3-kR3" firstAttribute="centerX" secondItem="gmg-Oz-xII" secondAttribute="centerX" id="hkr-eU-2Du"/>
                             <constraint firstItem="H63-M5-rTr" firstAttribute="bottom" secondItem="yWz-Mg-QWM" secondAttribute="bottom" id="qTf-Uy-M6w"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="XL1-W3-kR3" id="8R2-xd-wJS"/>
                         <outlet property="imageView" destination="H63-M5-rTr" id="xPw-lA-beX"/>
+                        <segue destination="WdZ-b0-y3y" kind="show" identifier="goToCameraVC" id="Wzx-Ce-4Je"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIj-sB-PI5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400" y="3"/>
+            <point key="canvasLocation" x="-400.00000000000006" y="2.4456521739130435"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIo-T3-Whk">
+            <objects>
+                <viewController id="WdZ-b0-y3y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OTf-rK-NIW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dEd-fd-Za9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Agn-Y0-zg4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOr-BR-kim" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="2"/>
         </scene>
     </scenes>
     <resources>
+        <image name="button-camera" width="33.333332061767578" height="33.333332061767578"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

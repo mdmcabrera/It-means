@@ -12,9 +12,12 @@ import SwiftyTesseract
 
 class CameraViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var cameraButton: UIButton!
+
     var session = AVCaptureSession()
     var requests = [VNRequest]()
     var detectedTextImage: UIImage?
+    var takePhoto = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +44,6 @@ class CameraViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         startLiveVideo()
         startTextDetection() // Vision Framework recognition
-
     }
 
     override func viewDidLayoutSubviews() {
@@ -84,6 +86,11 @@ class CameraViewController: UIViewController {
 
         session.startRunning()
     }
+
+    @IBAction func didTakePhoto(_ sender: Any) {
+        takePhoto = true
+    }
+
 
 
     /**
@@ -243,8 +250,17 @@ extension CameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
         do {
             try imageRequestHandler.perform(self.requests)
+
         } catch {
             print(error)
+        }
+
+        if takePhoto {
+            takePhoto = false
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "goToCameraVC", sender: nil)
+                self.session.stopRunning()
+            }
         }
     }
 }
