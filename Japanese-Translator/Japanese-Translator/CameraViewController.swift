@@ -127,42 +127,9 @@ class CameraViewController: UIViewController {
                 }
 
                 self.hightlightWord(box: boxRegion)
-                self.startTesseractTextRecognition()
+           //     self.startTesseractTextRecognition()
             }
         }
-    }
-
-    // This has to go
-    private func performOCR() {
-        guard let image = detectedTextImage?.cgImage else {
-            return
-        }
-
-        let requestHandler = VNImageRequestHandler(cgImage: image, options: [:])
-
-        let request = VNRecognizeTextRequest { (request, error) in
-            if let error = error {
-                print(error)
-               // return
-            }
-
-            guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
-            for currentObservation in observations {
-                print(currentObservation)
-                let topCandidate = currentObservation.topCandidates(1)
-                if let recognizedText = topCandidate.first {
-                    print(recognizedText.string)
-                }
-            }
-        }
-
-        request.recognitionLevel = .fast
-        request.usesLanguageCorrection = true
-        request.recognitionLanguages = ["en-US", "en-GB"] // Vision doesn't recognize Japanese yet
-
-        try? requestHandler.perform([request])
-
-
     }
 
     private func startTesseractTextRecognition() {
