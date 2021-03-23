@@ -17,6 +17,8 @@
 		3E5D3EE925EAA0DF00FA7D81 /* Japanese_TranslatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D3EE825EAA0DF00FA7D81 /* Japanese_TranslatorUITests.swift */; };
 		3E5D3F0C25EABDFD00FA7D81 /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D3F0B25EABDFD00FA7D81 /* UIImage+Helper.swift */; };
 		3E5D3F1125EABE9C00FA7D81 /* CVImageBuffer+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D3F1025EABE9C00FA7D81 /* CVImageBuffer+Helper.swift */; };
+		3E728248260A005C0087FB80 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E728247260A005C0087FB80 /* UIView+Helper.swift */; };
+		3E728250260A095A0087FB80 /* Amperzand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E72824F260A095A0087FB80 /* Amperzand.ttf */; };
 		3E75269826076BCB00C15CCB /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3E75269726076BCB00C15CCB /* tessdata */; };
 		434249314DB8F07113A22418 /* Pods_Japanese_Translator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0C770FC06C91DF4776A3C8 /* Pods_Japanese_Translator.framework */; };
 		7DE4827341B91C8BDA5EF349 /* Pods_Japanese_TranslatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD99F1A0595D179BE8B51DB /* Pods_Japanese_TranslatorTests.framework */; };
@@ -59,6 +61,8 @@
 		3E5D3EEA25EAA0DF00FA7D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E5D3F0B25EABDFD00FA7D81 /* UIImage+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
 		3E5D3F1025EABE9C00FA7D81 /* CVImageBuffer+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVImageBuffer+Helper.swift"; sourceTree = "<group>"; };
+		3E728247260A005C0087FB80 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		3E72824F260A095A0087FB80 /* Amperzand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amperzand.ttf; sourceTree = "<group>"; };
 		3E75269726076BCB00C15CCB /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		52710916F881C7F5C37924B2 /* Pods-Japanese-TranslatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese-TranslatorTests.release.xcconfig"; path = "Target Support Files/Pods-Japanese-TranslatorTests/Pods-Japanese-TranslatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F35A65AC7C9E2562D6DA5BC /* Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Japanese-Translator-Japanese-TranslatorUITests/Pods-Japanese-Translator-Japanese-TranslatorUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,12 +149,11 @@
 		3E5D3EC525EAA0DD00FA7D81 /* Japanese-Translator */ = {
 			isa = PBXGroup;
 			children = (
-				3E75269726076BCB00C15CCB /* tessdata */,
+				3E72824D260A08940087FB80 /* Resource */,
 				3E5D3F0725EABDA600FA7D81 /* Helpers */,
 				3E5D3EC625EAA0DD00FA7D81 /* AppDelegate.swift */,
 				3E5D3EC825EAA0DD00FA7D81 /* SceneDelegate.swift */,
 				3E5D3ECC25EAA0DD00FA7D81 /* Main.storyboard */,
-				3E5D3ECF25EAA0DF00FA7D81 /* Assets.xcassets */,
 				3E5D3ED125EAA0DF00FA7D81 /* LaunchScreen.storyboard */,
 				3E5D3ED425EAA0DF00FA7D81 /* Info.plist */,
 				3E2C7DEF2604BC4200F4117B /* CameraViewController.swift */,
@@ -181,8 +184,27 @@
 			children = (
 				3E5D3F0B25EABDFD00FA7D81 /* UIImage+Helper.swift */,
 				3E5D3F1025EABE9C00FA7D81 /* CVImageBuffer+Helper.swift */,
+				3E728247260A005C0087FB80 /* UIView+Helper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3E72824D260A08940087FB80 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3E72824E260A09310087FB80 /* fonts */,
+				3E75269726076BCB00C15CCB /* tessdata */,
+				3E5D3ECF25EAA0DF00FA7D81 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3E72824E260A09310087FB80 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3E72824F260A095A0087FB80 /* Amperzand.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E728250260A095A0087FB80 /* Amperzand.ttf in Resources */,
 				3E5D3ED325EAA0DF00FA7D81 /* LaunchScreen.storyboard in Resources */,
 				3E75269826076BCB00C15CCB /* tessdata in Resources */,
 				3E5D3ED025EAA0DF00FA7D81 /* Assets.xcassets in Resources */,
@@ -428,6 +451,7 @@
 				3E5D3EC925EAA0DD00FA7D81 /* SceneDelegate.swift in Sources */,
 				3E5D3F1125EABE9C00FA7D81 /* CVImageBuffer+Helper.swift in Sources */,
 				3E2C7DF02604BC4200F4117B /* CameraViewController.swift in Sources */,
+				3E728248260A005C0087FB80 /* UIView+Helper.swift in Sources */,
 				3E5D3F0C25EABDFD00FA7D81 /* UIImage+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
